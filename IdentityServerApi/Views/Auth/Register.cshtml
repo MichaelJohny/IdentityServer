@@ -1,0 +1,22 @@
+﻿@model IdentityServerApi.Models.RegisterViewModel
+
+<form method="post" asp-controller="Auth" asp-action="Register">
+    <input type="hidden" asp-for="ReturnUrl">
+    <div>
+        <label >Username</label>
+        <input asp-for="Username">
+    </div>
+    <div>
+        <label >Password</label>
+        <input asp-for="Password">
+    </div>
+    <div>
+        <label >Confirm Password</label>
+        <input asp-for="ConfirmPassword">
+    </div>
+    <div>
+        <button type="submit" >Sign Up</button>
+    </div>
+    
+</form>
+

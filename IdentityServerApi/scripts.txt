@@ -1,0 +1,6 @@
+﻿Add-Migration InitialAppDbMigration -c AppDbContext -o Data/Migrations/AppContext
+ Add-Migration InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+  
+Add-Migration InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+
+Update-Database -c <ContextName>
